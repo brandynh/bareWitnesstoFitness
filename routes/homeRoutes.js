@@ -4,7 +4,7 @@ const path = require('path');
 // Route for navigating to excercise page
 router.get("/excercise", (req, res) => {
 
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/exercise.html'));
 
 });
 
