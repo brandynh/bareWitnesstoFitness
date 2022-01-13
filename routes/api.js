@@ -90,10 +90,10 @@ router.post('/api/workouts', ({ body }, res) =>{
 
 // Update workout by ID
 
-router.put('/api/workouts/:id', ({ body, param }, res) => {
+router.put('/api/workouts/:id', ({ body, params }, res) => {
     Workout.findByIdAndUpdate(
 
-        { _id: param.id },
+        { _id: params.id },
         { $push: { exercises: body } },
         { new: true }
 
